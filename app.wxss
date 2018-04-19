@@ -1,0 +1,33 @@
+/* *app.wxss* */
+
+.container {
+    height: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.toast {
+    background: white;
+    padding: 10rpx 20rpx;
+    font-size: 24rpx;
+    position: absolute;
+    bottom: 126rpx;
+    box-shadow: 2rpx 1rpx 10rpx #777;
+    border-radius: 6rpx;
+    color: #f00;
+    text-align: center;
+    font-weight: bold;
+    left: 40%;
+}

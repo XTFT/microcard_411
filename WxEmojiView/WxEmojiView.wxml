@@ -1,0 +1,11 @@
+
+<template name="WxEmojiTextarea">
+  <view class="WxEmojiViewContainer">
+      <view class="WxEmojiChooseChooseView" style="display:{{WxEmojiObjs.showWxEmojiChooseView == 1 ? 'block' : 'none'  }};">
+          <block wx:for="{{WxEmojiObjs.emojiArray}}" wx:key="id">
+            <image bindtap="wxPreEmojiTap" data-text="[{{item.img}}]" class="wxPreEmoji" src="{{WxEmojiObjs.http_host}}uploads/web/emojis/{{item.img}}.gif"/>
+          </block>
+      </view>
+  </view>
+</template>
+

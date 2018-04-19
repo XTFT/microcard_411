@@ -1,0 +1,36 @@
+<view class="container">
+    <view class="top">
+        <text class="top_title">上传背景图片（建议尺寸690*400）</text>
+        <image bindtap="upload_img" class="upload_img" src="{{http_host}}uploads/web/img/index/icon-upload2.png"></image>
+    </view>
+
+    <view class="middle"></view>
+
+    <view class="bg_options">
+        <text class="bo_title">或者选择其他图片</text>
+        <block wx:for="{{imgs}}" wx:key="id" wx:for-item="item">
+          <view class="bg_item">
+            <image bindtap="selImg" class="image" data-url="{{item.url}}" data-file="{{item.bg_url}}" src="{{item.url}}"></image>            
+            <image class="cloas_bg" bindtap="closeBg" data-id="{{item.id}}" src="{{http_host}}uploads/card/common/close_bg.png"></image>
+        </view>
+        </block>
+        <view class="bg_item">
+            <image bindtap="selImg" class="image" data-url="{{http_host}}uploads/card/common/bg1.png" data-file="common/bg1.png" src="{{http_host}}uploads/card/common/bg1.png"></image>
+        </view>
+        <view class="bg_item">
+            <image bindtap="selImg" class="image" data-url="{{http_host}}uploads/card/common/bg2.png" data-file="common/bg2.png" src="{{http_host}}uploads/card/common/bg2.png"></image>
+        </view>
+        <view class="bg_item">
+            <image  bindtap="selImg" class="image" data-url="{{http_host}}uploads/card/common/bg3.png" data-file="common/bg3.png" src="{{http_host}}uploads/card/common/bg3.png"></image>
+        </view>
+        <view class="bg_item">
+            <image  bindtap="selImg" class="image" data-url="{{http_host}}uploads/card/common/bg4.png" data-file="common/bg4.png" src="{{http_host}}uploads/card/common/bg4.png"></image>
+        </view>
+        <view class="bg_item">
+            <image  bindtap="selImg" class="image" data-url="{{http_host}}uploads/card/common/bg5.png" data-file="common/bg5.png" src="{{http_host}}uploads/card/common/bg5.png"></image>
+        </view>
+        <view class="bg_item">
+            <image  bindtap="selImg" class="image" data-url="{{http_host}}uploads/card/common/bg6.png" data-file="common/bg6.png" src="{{http_host}}uploads/card/common/bg6.png"></image>
+        </view>
+    </view>
+</view>

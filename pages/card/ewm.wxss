@@ -1,0 +1,43 @@
+/* pages/card/ewm.wxss */
+page{font-family: '微软雅黑'}
+.ewm_top{position: relative;width: 100%;height: 477rpx;background-size: 100% 100%;}
+.ewm_top .ewm_top_title{position: absolute;bottom: 0;height: 55%;width: 100%;}
+.ewm_top .ewm_top_title .title{margin: 40rpx 39rpx 0;font-size: 24rpx;color: #cdcbca;display: flex;}
+.ewm_top .ewm_top_title .title .big_text{font-size: 47rpx;color: #fafafa;margin-right: 5rpx}
+.ewm_top .ewm_top_title .main_text{font-size: 24rpx;color: #cdcbca;text-align: justify;margin: 0 39rpx;display: block;line-height: 42rpx;}
+
+.detail{margin-top: 25rpx;width: 690rpx;height: 400rpx;border-radius: 40rpx;overflow: hidden;box-shadow: 0 4rpx 10px #e3e3e3;margin-bottom: 60rpx;}
+.detail .part1{width: 100%;display: flex;background: #f3f3f3;padding: 25rpx 0 30rpx 0;}
+.detail .part1 .tx{width: 180rpx;height: 180rpx;display: inline-block;border-radius: 50%;margin-left: 58rpx;box-shadow: 0 6rpx 15px #a7a8a8;}
+.detail .part1 .n_j{display: inline-block;margin-left: 27rpx;margin-top: 134rpx;}
+.detail .part1 .n_j .name{font-size: 36rpx;color: #37383b;display: inline-block;margin-right: 16rpx;font-family: '黑体';font-weight: bold;}
+.detail .part1 .n_j .job{font-size: 22rpx;color: #707070;display: inline-block;}
+
+.detail .part2{margin-left: 58rpx;}
+.detail .part2 .gs{display: flex;margin-top: 36rpx;}
+.detail .part2 .gs .p2_img_gs{width: 24rpx;height: 25rpx;margin-right: 20rpx;margin-top: 7rpx;}
+.detail .part2 .tel{display: flex;margin-top: 18rpx;}
+.detail .part2 .tel .p2_img_tel{width: 22rpx;height: 22rpx;margin-right: 20rpx;margin-top: 8rpx;}
+.detail .part2 .p2_text{font-size: 28rpx;color: #929292;}
+
+.foot{width: 100%;height: 242rpx;background: #f3f3f3;}
+.foot .ewm{float: left;width: 150rpx;height: 150rpx;border: 18rpx solid white;margin: 25rpx 44rpx 22rpx 91rpx;}
+.foot .f_text{display: block;margin-top: 65rpx;}
+.foot .f_text .f_text1{display: inline-block;font-size: 28rpx;color: #707070;font-family: '黑体';font-weight: bold;}  
+.green{color: #19ad17 !important;}
+.foot .f_text .f_text2{display: inline-block;color: #bababa;font-size: 26rpx;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

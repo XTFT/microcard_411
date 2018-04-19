@@ -1,0 +1,7 @@
+<!--pages/index/relevant_content.wxml-->
+<view class="container">
+    <textarea class="main"  bindinput="all_input_val" data-key="1" placeholder="请输入相关介绍" value="{{content}}" />
+     <view class="btn" bindtap="saveBut">
+        <text class="save">确认保存</text>
+    </view>
+</view>

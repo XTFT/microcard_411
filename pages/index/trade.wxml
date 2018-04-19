@@ -1,0 +1,16 @@
+<view class="container">
+    <view class="hy_list">
+        <view class="level1">
+           <block wx:for="{{list}}" wx:key="id" wx:for-item="item">
+            <text bindtap="levelFun" class="p_name {{item.current == 1 ? 'active' : ''}}" data-key="{{item.id}}">{{item.name}}</text>
+           </block>
+        </view>
+        <block wx:for="{{list}}" wx:key="id" wx:for-item="item">        
+        <view class="level2" style="{{item.current == 1 ? '' : 'display:none'}}" >
+            <block wx:for="{{item.item}}" wx:key="id" wx:for-item="itemChild">  
+            <text class="s_name" bindtap="itemFun" data-name="{{itemChild.name}}" data-key="{{itemChild.id}}">{{itemChild.name}}</text>
+            </block>
+        </view>
+        </block>
+    </view>
+</view>

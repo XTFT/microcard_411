@@ -1,0 +1,57 @@
+<import src="../../WxEmojiView/WxEmojiView.wxml"/>
+
+<view class="container" style="background:gread">
+
+    <view class="mp_no {{isShow ? 'hide': 'show'}}">
+        <view class="mp_no1 mp_no_info">
+            <image class="no_icon" src="{{http_host}}uploads/web/img/card/icon-no.png"></image>
+        </view>
+    </view>
+
+    <view class="ly_list {{isShow ? 'show':'hide'}}">
+        <block wx:for="{{lists}}" wx:key="id" wx:for-item="item">
+        <view class="ly_item clearfix">
+            <image class="touxiang" src="{{item.avatar_url}}"></image>
+            <view class="ly_detail">
+            <text class="ly_name _text">{{item.nick_name}}</text>
+            <view class="ly _text">
+                <block wx:for="{{item.content}}" wx:key="id" wx:for-item="item_c">
+                  <image wx:if="{{!item_c.isTest}}" src="{{item_c.value}}" style="height:35rpx;width:35rpx;margin:1rpx 5rpx 0;"></image>
+                  <text class='mesg_con' wx:else>{{item_c.value}}</text>
+              </block>       
+            </view>            
+             <view class="ly_time _text">{{item.createtime}}</view>
+            <view class="ly_d" style="display:{{item.item?'display':'none'}};">
+                <view class="ly_kuang">
+                <block wx:for="{{item.item}}" wx:key="id" wx:for-item="item_1">
+                    <view class="ly_msg">
+                        <text class="_name">{{item_1.nick_name}}：</text>
+                        <view style="display: inline-block">
+                         <block wx:for="{{item_1.content}}" wx:key="id" wx:for-item="item1_c">
+                            <image wx:if="{{!item1_c.isTest}}" src="{{item1_c.value}}" style="height: 35rpx;width: 35rpx;margin: 1px 2px 0;"></image>
+                            <text class='mesg_con' wx:else>{{item1_c.value}}</text>
+                        </block>
+                        </view>
+                    </view>
+                </block>
+                </view>
+            </view>
+            </view>
+        </view>
+        </block>
+    </view>
+    
+    <view class="srk {{is_bq == true ? 'srk_qb':''}}">
+        <view class="ly_content">
+            <input type="text" focus="{{focus}}" bindfocus="input_focus" bindblur="input_blur" value="{{val}}" bindinput="content" />
+        </view>
+        <view class="bq" bindtap="show_bq">      
+          <image wx:if="{{is_showbq == false}}" src="{{http_host}}uploads/web/img/my/biaoqing.png"></image>
+          <image wx:else src="{{http_host}}uploads/web/img/my/qb_jianpan.png"></image>
+        </view>
+        <text class="send {{isSend? 'active':''}}" data-key="{{form_member_id}}" data-pid="{{parent_id}}" bindtap="send">发送</text>
+        <view>
+            <template is="WxEmojiTextarea" data="{{WxEmojiObjs}}" />
+        </view>
+    </view>
+</view>

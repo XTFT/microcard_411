@@ -1,0 +1,90 @@
+<!--index.wxml-->
+
+<view>
+    <view wx:if="{{!isAddCard}}" class="no_card {{isShow1}}" style="display:none">
+        <text class="t">每天发布<text class="blue">20,000,000个</text>商务名片</text>
+        <text class="t">每天促成<text class="blue">520,000个</text>商务洽谈</text>
+        <text class="t">0成本，让交际成为习惯</text>
+        <view class="index_img">
+            <image src="{{http_host}}uploads/web/img/index/icon-index.png"></image>
+        </view>
+        <button class="creat" bindtap="create_cart">快速创建名片</button>
+    </view>
+    <view wx:else class="{{isShow}}" style="background:#f2f2f2;width:100%;text-align:center;display:none">
+        <view class="card_detail">
+            <view class="cd_detail" style="background:url('{{bg_url}}') no-repeat;">
+                <view class="cd_share">
+                    <button open-type="share">
+                        <image src="{{http_host}}uploads/web/img/index/icon-share.png"></image>
+                        <text>分享</text>
+                    </button>
+                </view>
+
+                <view class="tx_name">
+                    <image class="tx_img" src="{{avatar_url}}"></image>
+                    <view class="n_detail">
+                        <text class="b_name">{{name}}</text>
+                        <text class="z_name">{{position}}</text>
+                    </view>
+                </view>
+
+                <view class="o_detail">
+                    <view class="od_item">
+                        <image src="{{http_host}}uploads/web/img/index/icon-phone.png"></image>
+                        <text class="tel" bindtap="clickCall">电话：<text class="white">{{mobile}}</text>
+                        </text>
+                    </view>
+                    <view class="od_item">
+                        <image style="width: 22rpx;" src="{{http_host}}uploads/web/img/index/icon-address.png"></image>
+                        <text class="tel">公司：<text class="white">{{company_name}}</text>
+                        </text>
+                    </view>
+                    <view class="od_item">
+                        <image src="{{http_host}}uploads/web/img/index/icon-gs.png"></image>
+                        <text class="tel" bindtap="goToLocation">地址：<text class="white">{{company_address}}</text>
+                        </text>
+                    </view>
+                </view>
+            </view>
+            <view class="cd_number">
+                <view class="number_item">
+                    <image class="zan_img" src="{{http_host}}uploads/web/img/index/icon-hreat.png"></image>
+                    <text class="zan number_text">点赞：{{thumb_up_count}}</text>
+                </view>
+                <view class="number_item">
+                    <image class="sc_img" src="{{http_host}}uploads/web/img/index/icon-star.png"></image>
+                    <text class="zan number_text">收藏：{{collect_count}}</text>
+                </view>
+                <view class="number_item" bindtap="goToMessage">
+                    <image class="ly_img" src="{{http_host}}uploads/web/img/index/icon-msg.png"></image>
+                    <text class="zan number_text">留言：{{message_count}}</text>
+                </view>
+            </view>
+        </view>
+
+        <view style="width:100%;height:25rpx;background:#f2f2f2"></view>
+
+        <view class="rm_js">
+            <view class="rm">
+                Wo的人脉
+                <view class="rm_detail">
+                    <view class="rm_tx">
+                        <block wx:for="{{records}}" wx:key="id" wx:for-item="item">
+                            <image src="{{item.avatar_url}}" bindtap="getMemberCard" data-key="{{item.member_id}}"></image>
+                        </block>
+                    </view>
+                    <text class="rm_numver">{{view_count}}人</text>
+                </view>
+            </view>
+            <view class="rm" bindtap="getShare">
+                我的二维码
+            </view>
+            <view class="js">
+                <text class="js_title">相关介绍</text>
+                <text class="js_main" style="word-wrap:break-word; word-break:break-all;">{{remark}}</text>
+            </view>
+
+        </view>
+
+    </view>
+</view>

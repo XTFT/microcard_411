@@ -1,0 +1,33 @@
+/* pages/index/trade.wxss */
+page{background: #f6f6f6;font-family: '微软雅黑';}
+.hy_list{margin-top: 32rpx;width: 690rpx;background: #f6f6f6;overflow: hidden;padding-top: 30rpx;}
+.hy_list .level1{width: 252rpx;float: left;overflow-y: auto;max-height: 1100rpx}
+.hy_list .level1 .p_name{background: #f0f0f0;color: #666;font-size: 28rpx;text-align: center;display: inline-block;line-height: 90rpx;width: 100%;border-top: 1px solid #dcdcdc;}
+.hy_list .level1 .p_name:last-child{border-bottom: 1px solid #dcdcdc;}
+.hy_list .level1 .active{background:#fff;border-right:#fff }
+/* .hy_list .level2{display: flex;width: 437rpx;}
+.hy_list .level2 .s_name{word-wrap : break-word;color: #666;font-size: 28rpx;text-align: center;display: block;line-height: 90rpx;width: 437rpx;border-top: 1px solid #dcdcdc;} */
+
+.hy_list .level2{width: 437rpx;float: left;background: #fff;overflow-y: auto;max-height: 1100rpx}
+.hy_list .level2 .s_name{color: #666;font-size: 28rpx;text-align: center;display: inline-block;line-height: 90rpx;width: 100%;border-top: 1px solid #dcdcdc;}
+.hy_list .level2 .s_name:last-child{border-bottom: none}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

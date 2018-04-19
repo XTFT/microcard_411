@@ -1,0 +1,33 @@
+
+
+position_a/* pages/index/create_card.wxss */
+.container{font-family: '微软雅黑';}
+.c_top{width: 100%;text-align: left;margin-top: 44rpx;border-bottom: 1px solid #dcdcdc;}
+.c_top .c_tx {width: 172rpx;height: 172rpx;display: inline-block;border-radius: 50%;margin-left: 58rpx;}
+.c_top .c_sex {display: inline-block;vertical-align: top;margin-top: 88rpx;margin-left: 81rpx;}
+.c_top .c_sex .male{display: inline-block;margin-right: 73rpx;}
+.c_top .c_sex .female{display: inline-block;}
+.c_top .c_sex .sex{width:50rpx;height:50rpx;display: inline-block;margin-right:17rpx;}
+.c_top .c_sex .sex .gm_img{width: 100% !important;height: 100% !important;background: none;margin-right: 25rpx;}
+.c_top .c_sex .gm_text{font-size: 32rpx;color: #3c4043;display: inline-block;vertical-align: top;margin-top:10rpx;}
+
+.c_list{width: 100%;}
+.c_list .option1{position: relative;width: 100%;border-bottom: 1px solid #dcdcdc;display: inline-block;line-height: 90rpx;}
+.c_list .option1 .o1_title{display: inline-block;width: 119rpx;vertical-align: top;margin-left: 28rpx;font-size: 32rpx;line-height: 90rpx;}
+.c_list .option1 input{display: inline-block;line-height: 90rpx;height: 90rpx;vertical-align: top;font-size: 28rpx;width: 65%}
+.c_list .option1 .o2_title{display: inline-block;width: 178rpx;vertical-align: top;margin-left: 28rpx;font-size: 32rpx;line-height: 90rpx;}
+.c_list .option1 input{display: inline-block;line-height: 90rpx;height: 90rpx;vertical-align: top;font-size: 28rpx;width: 80%}
+.c_list .option1 .trun{width: 19rpx;height: 35rpx;position: absolute;right: 30rpx;top: 29rpx;}
+.c_list .option1 .send_code{position: absolute;right: 33rpx;top: 10rpx;line-height: 66rpx;border-left: 1px solid #dcdcdc;font-size: 26rpx;color: #37383b;padding-left: 32rpx;}
+.c_list .option1 .position_a{position: absolute;z-index: 999;background: rgba(0,0,0,0);width: 100%;height: 100%;top: 0;left: 0;}
+
+
+.c_list .option1 .bg_url{height: 60rpx;width: 120rpx;position:relative;left: 0;top: 18rpx;border-radius: 10rpx}
+.save{width: 100%;display: inline-block;text-align: center;margin-top: 44rpx;margin-bottom: 40rpx;}
+.save text{border-radius: 8rpx;width: 690rpx;line-height: 88rpx;font-size: 36rpx;color: #e6ffff;background: #19ad17;display:inline-block;}
+
+
+.remark_txt{width: 60%;height: 90rpx;font-size: 28rpx;overflow: hidden;display:inline-block;position: absolute;top: 0; left: 206rpx;text-overflow:ellipsis;white-space: nowrap;}
+
+
+

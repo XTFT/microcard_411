@@ -1,0 +1,73 @@
+<view class="container">
+    <view class="c_top">
+        <image class="c_tx" src="{{avatar_url}}"></image>
+        <view class="c_sex">
+            <view class="male">
+                <view class="sex">
+                    <image class="gm_img" bindtap="b_g_img" data-sex="1" src="{{boy_img}}"></image>
+                </view>
+                <text class="gm_text">男</text>
+            </view>
+            <view class="female">
+                <view class="sex">
+                    <image class="gm_img" bindtap="b_g_img" data-sex="2" src="{{girl_img}}"></image>
+                </view>
+                <text class="gm_text">女</text>
+            </view>
+        </view>
+    </view>
+
+    <view class="c_list">
+        <view class="option1">
+            <text class="o1_title">姓名</text>
+            <input type="text" bindinput="all_input_val" data-key="1" value="{{name}}" placeholder="请输入你的姓名" />
+        </view>
+        <view class="option1">
+            <text class="o1_title">电话</text>            
+            <input data-key="2" maxlength="11" type="number" value="{{phone}}"  bindinput="all_input_val" placeholder="请输入你的电话" />
+        </view>
+        <view wx:if="{{isShowCode}}" class="option1">
+            <text class="o1_title">验证码</text>
+            <input type="number" maxlength="4" data-key="3" value="{{code}}" style="width:50%" focus="{{isCode}}" bindinput="all_input_val" bindblur="all_input_blur" placeholder="请输入验证码" />  
+            <view class="send_code" bindtap="getSendCode">{{sendCodeName}}</view>
+        </view>
+        <view class="option1">
+            <text class="o1_title">公司</text>
+            <input type="text" data-key="4" bindinput="all_input_val" value="{{company_name}}" placeholder="请输入公司名称" />
+        </view>
+        <view class="option1">
+            <text class="o1_title">职务</text>
+            <input type="text" bindinput="all_input_val" data-key="5" value="{{position}}" placeholder="请输入职务" />
+        </view>
+        <view class="option1">
+            <view class="position_a" bindtap="hangye"></view>
+            <text class="o1_title">行业</text>
+            <input type="text" disabled placeholder="行业性质" value="{{industry_name}}"/>
+            <image class="trun" src="{{http_host}}uploads/web/img/index/icon-trun.png"></image>
+        </view>
+        <view class="option1">
+            <view class="position_a" bindtap="getAddres"></view>
+            <text class="o2_title">公司地址</text>
+             <view class="remark_txt">{{company_address}}</view>
+            <image class="trun" src="{{http_host}}uploads/web/img/index/icon-trun.png"></image>
+        </view>
+        <view class="option1">
+            <view class="position_a" bindtap="getBgImg"></view>
+            <text class="o2_title">更换背景图</text>            
+            <image class="bg_url" src="{{htt_bg_url}}"></image>
+            <image class="trun" src="{{http_host}}uploads/web/img/index/icon-trun.png"></image>
+        </view>
+        <view class="option1">
+            <view class="position_a" bindtap="getRemark"></view>
+            <text class="o2_title">相关介绍</text>
+            <view class="remark_txt">{{remark}}</view>
+            <image class="trun" src="{{http_host}}uploads/web/img/index/icon-trun.png"></image>
+        </view>
+    </view>
+    <view class="save">
+        <text bindtap="save_sure">确认保存</text>
+    </view>
+    <view class="toast" animation = '{{an}}' style="display: {{is_show == true?'block':'none'}};">
+        <text>{{toast_text}}</text>
+    </view>
+</view>

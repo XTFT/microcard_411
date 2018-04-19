@@ -1,0 +1,32 @@
+/* pages/my/my.wxss */
+.top_part{width: 100%;font-family: '微软雅黑';}
+.top_part .edit{width: 100%;text-align: right;display: block;margin-top: 17rpx;}
+.top_part .edit .edit_img{width: 22rpx;height: 22rpx;margin-right: 12rpx;margin-bottom:-1rpx;}
+.top_part .edit .edit_text{font-size: 26rpx;color: #3c4043;margin-right: 24rpx;}
+.top_part .tx_name{text-align: center;}
+.top_part .tx_name image{display: inline-block;width: 172rpx;height: 172rpx;border-radius: 50%;}
+.top_part .tx_name text{color: #3c4043;display: inline-block;width: 100%;font-size: 36rpx;margin-top: 7rpx;}
+
+.my_list{margin-top: 29rpx;font-family: '微软雅黑';width: 100%;}
+.my_list .ml_item{position: relative;padding: 22rpx 0;text-align: left;width: 100%;border-bottom: 1px solid #dcdcdc;}
+.my_list .ml_item .ml_img{margin-right: 20rpx;display: inline-block;margin-bottom: -3rpx}
+.my_list .ml_item .ll{width:40rpx;height:38rpx;margin-bottom: -3rpx;margin-left: 30rpx;}
+.my_list .ml_item .zan{width: 40rpx;height: 40rpx;margin-bottom: -6rpx;margin-left:31rpx;}
+.my_list .ml_item .sc{width: 38rpx;height: 38rpx;margin-bottom: 0rpx;margin-left:31rpx;}
+.my_list .ml_item .ly{width: 41rpx;height: 39rpx;margin-bottom: -6rpx;margin-left:31rpx;}
+.my_list .ml_item .ml_text{font-size: 32rpx;color: #37383b;position: absolute;left: 91rpx;top: 25rpx;}
+.my_list .ml_item .n_t{position: absolute;right: 30rpx;top: 25rpx;}
+.my_list .ml_item .n_t .number{font-size: 32rpx;color: #37383b;margin-right: 21rpx;}
+.my_list .ml_item .n_t .trun{width: 19rpx;height: 35rpx;margin-bottom: -4rpx;}
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,31 @@
+/* pages/index/relevant_content.wxss */
+page{background: #f2f2f2;font-family: '微软雅黑';}
+.main{width: 608rpx;height: 602rpx;resize: none;background: #fff;margin: 0 auto;margin-top: 32rpx;text-align: justify;color: #666;font-size: 26rpx;border-radius: 
+10rpx;padding: 41rpx 39rpx;line-height: 42rpx;}
+
+.btn{margin-top: 371rpx;width: 100%;height: 88rpx;text-align: center;overflow: hidden;}
+.btn .save{display: inline-block;line-height: 88rpx;border-radius: 8rpx;background: #19ad17;width: 690rpx;color: #fff;font-size: 36rpx;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

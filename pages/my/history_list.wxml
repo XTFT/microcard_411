@@ -1,0 +1,21 @@
+<view class="container">
+  <view class="mp_no {{isShow ? 'hide': 'show'}}" style="display:none">
+    <view class="mp_no1 mp_no_info">
+      <image class="no_icon" src="{{http_host}}uploads/web/img/card/icon-no.png"></image>
+    </view>
+  </view>
+
+  <view class="{{isShow ? 'show':'hide'}}" style="width:100%;display:none">
+    <block wx:for="{{list}}" wx:key="id" wx:for-item="item">
+      <view class="list_item" data-key="{{item.member_id}}" bindtap="goToCard">
+        <image src="{{item.avatar_url}}"></image>
+        <view class="n_j_t">
+          <text class="name">{{item.name}}</text>
+          <view class="job"><text style="display:inline-block;height:30rpx;overflow: hidden">{{item.company_name}}</text><text class="time">{{item.update_time}}</text></view>
+        </view>
+      </view>
+    </block>
+  </view>
+  <text wx:if="{{isShowTip}}" class="last_text">显示最近10位</text>
+
+</view>

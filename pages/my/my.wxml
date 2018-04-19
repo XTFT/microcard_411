@@ -1,0 +1,52 @@
+<!--pages/my/my.wxml-->
+<view class="container">
+  <view class="top_part">  
+    <view wx:if="{{is_card}}" class="edit" bindtap="goToEdit">
+      <image class="edit_img" src="{{http_host}}uploads/web/img/my/icon-edit.png"></image>
+      <text class="edit_text">编辑</text>
+    </view>
+
+    <view class="tx_name">
+      <image src="{{avatar_url}}"></image>
+      <text>{{nick_name}}</text>
+    </view>
+  </view>
+
+  <view class="my_list">
+    <view class="ml_item" data-type="3" bindtap="goToViewList3">
+      <image class="ll ml_img" src="{{http_host}}uploads/web/img/my/icon-ll.png"></image>
+      <text class="ml_text">谁看过我</text>
+      <view class="n_t">
+        <text class="number">{{view_count}}</text>
+        <image class="trun" src="{{http_host}}uploads/web/img/my/icon-trun.png"></image>
+      </view>
+    </view>
+
+    <view class="ml_item" data-type="1" bindtap="goToViewList1">
+      <image class="zan ml_img" src="{{http_host}}uploads/web/img/my/icon-zan.png"></image>
+      <text class="ml_text">谁赞过我</text>
+      <view class="n_t">
+        <text class="number">{{thumb_up_count}}</text>
+        <image class="trun" src="{{http_host}}uploads/web/img/my/icon-trun.png"></image>
+      </view>
+    </view>
+
+    <view class="ml_item" data-type="2" bindtap="goToViewList2">
+      <image class="sc ml_img" src="{{http_host}}uploads/web/img/my/icon-sc.png"></image>
+      <text class="ml_text">谁收藏过我</text>
+      <view class="n_t">
+        <text class="number">{{collect_count}}</text>
+        <image class="trun" src="{{http_host}}uploads/web/img/my/icon-trun.png"></image>
+      </view>
+    </view>
+
+    <view class="ml_item"  bindtap="goToMessageList">
+      <image class="ly ml_img"  src="{{http_host}}uploads/web/img/my/icon-ly.png"></image>
+      <text class="ml_text">我的留言</text>
+      <view class="n_t">
+        <text class="number">{{message_count}}</text>
+        <image class="trun" src="{{http_host}}uploads/web/img/my/icon-trun.png"></image>
+      </view>
+    </view>
+  </view>
+</view>

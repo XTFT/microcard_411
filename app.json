@@ -1,0 +1,47 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/index/create_card",
+    "pages/index/message",
+    "pages/index/change_bg",
+    "pages/index/relevant_content",
+    "pages/index/trade",
+    "pages/card/card",
+    "pages/card/ewm",
+    "pages/card/p_card",
+    "pages/my/my",
+    "pages/my/history_list",
+    "pages/my/message"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fafafa",
+    "navigationBarTitleText": "首页",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "borderStyle": "#f2f4f5",
+    "backgroundColor": "#fff",
+    "selectedColor": "#19ad17",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "img/tabar1.png",
+        "selectedIconPath": "img/tabar1_1.png"
+      },
+      {
+        "pagePath": "pages/card/card",
+        "text": "名片夹",
+        "iconPath": "img/tabar2.png",
+        "selectedIconPath": "img/tabar2_2.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "img/tabar3.png",
+        "selectedIconPath": "img/tabar3_3.png"
+      }
+    ]
+  }
+}

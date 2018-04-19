@@ -1,0 +1,37 @@
+<!--pages/card/card.wxml-->
+<view class="container">
+    <view class="search">
+        <input type="text" class="input_s {{isInputShow ? 'input_s1' : ''}}" data-key="1" bindfocus="allInputFocus" bindinput="allInputVal" bindblur="allInputBlur" placeholder="搜索"/>
+        <view class="s_tips {{isInputShow ? 's_tips1' : ''}}">
+            <image class="icon_s " src="{{http_host}}uploads/web/img/card/icon-search.png"></image>           
+        </view>
+    </view>
+    <view class="mp_no {{isShow ? 'hide': 'show'}}">
+        <image class="no_icon" src="{{http_host}}uploads/web/img/card/icon-no.png"></image>
+    </view>
+
+    <view class="n_list {{isShow ? 'show':'hide'}}">
+       <block wx:for="{{list}}" wx:key="id" wx:for-item="item">
+        <view class="z_item">         
+            <text class="zm">{{item.key}}</text>
+            <view class="list_all">
+                <block wx:for="{{item.item}}" wx:key="id" wx:for-item="item1">
+                <view class="list_item">
+                    <view class="n_tx" data-key="{{item1.for_member_id}}" bindtap="getCardInfo">
+                    <image src="{{item1.avatar_url}}" ></image>
+                    </view>
+                    <view class="n_j_t">
+                        <text class="name">{{item1.name}}</text>
+                        <text class="job">{{item1.company_name}}</text>
+                        <image bindtap="clickCall" class="call" data-mobile="{{item1.phone}}" src="{{http_host}}uploads/web/img/card/icon-call.png"></image>
+                    </view>
+                </view>         
+                </block>
+            </view>          
+        </view>
+        </block>
+    </view>
+</view>
+
+
+

@@ -1,0 +1,41 @@
+/* pages/card/card.wxss */
+page{background: #f2f2f2;font-family: '微软雅黑';}
+
+.search{width: 100%;position: relative;margin-top: 30rpx;text-align: center;}
+.search .input_s{text-align: center;margin: 0 30rpx;width: 690rpx;height: 54rpx;line-height: 56rpx;background: #fff;border-radius: 8rpx;font-size: 28rpx;}
+.search .s_tips{position: absolute;display: flex;z-index: 999;top: 6rpx;left: 300rpx;}
+.search .s_tips .icon_s{display: inline-block;width: 32rpx;height: 30rpx;margin-top: 4rpx;margin-right: 12rpx;}
+.search .s_tips .text_s{display: inline-block;font-size: 28rpx;color: #999;}
+
+.search .input_s1{text-align: left;padding-left: 50rpx;width: 640rpx;}
+.search .s_tips1{left: 40rpx}
+
+.mp_no{text-align: center; display: none;}
+.no_icon{width: 290rpx;height: 300rpx;display: inline-block;margin-top: 310rpx;}
+
+
+.n_list{width: 100%; display: none}
+.n_list .z_item{width: 100%;}
+.n_list .z_item .zm{font-size: 28rpx;color: #707070;margin-left: 31rpx;line-height: 62rpx;display: flex;}
+
+.n_list .z_item .list_item {background: white;padding-bottom: 25rpx;}
+.n_list .z_item .list_item .n_tx{margin-right: 28rpx;float: left;width: 89rpx;height: 89rpx;border-radius: 50%;margin-top: 12rpx;margin-left: 30rpx;}
+.n_list .z_item .list_item .n_tx image{width: 100%; height: 100%; border-radius: 50%;}
+.n_list .z_item .list_all .list_item:first-child .n_tx{margin-top: 25rpx;}
+.n_list .z_item .list_item .n_j_t{vertical-align: top;padding-top: 20rpx;position: relative;margin-left: 140rpx;}
+.n_list .z_item .list_all .list_item:first-child .n_j_t{padding-top: 30rpx;}
+.n_list .z_item .list_item .n_j_t .name{display: flex;font-size: 28rpx;color: #474955;font-family: '微软雅黑';}
+.n_list .z_item .list_item .n_j_t .job{font-family: '微软雅黑';padding-bottom: 12rpx;display: flex;border-bottom: 1px solid #dcdcdc;font-size: 24rpx;color: #748090;}
+.n_list .z_item .list_item .n_j_t .call{bottom: 20rpx;position: absolute;color: #bababa;right: 30rpx;width: 39rpx;height: 39rpx;}
+
+
+
+
+
+.show{display: block!important;}
+.hide{display: none!important}
+
+
+
+
+

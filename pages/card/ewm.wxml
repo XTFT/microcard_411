@@ -1,0 +1,35 @@
+<!--pages/card/ewm.wxml-->
+<view class="container">
+    <view class="ewm_top" style="background: url('{{http_host}}uploads/web/img/card/bg.png');background-size:100% 100%;">
+        <view class="ewm_top_title" style="background: url('{{http_host}}uploads/web/img/card/mb_bg.png') repeat-x;">
+            <!--<text class="title"><text class="big_text">10</text>月</text>
+            <text class="main_text">当你忘了了自己的过去,喜欢自己的现在，漠视自己的未来，你就站在了生命的最高处。当成功不会让你太高兴，失败不会把你怎么样，平淡不会淹没你时，已坦然的心向...</text>-->
+        </view>
+    </view>
+
+    <view class="detail">
+        <view class="part1">
+            <image class="tx" src="{{avatar_url}}"></image>
+            <view class="n_j">
+                <text class="name">{{name}}</text>
+                <text class="job">{{position}}</text>
+            </view>
+        </view>
+        <view class="part2">
+            <view class="gs">
+                <image class="p2_img_gs" src="{{http_host}}uploads/web/img/card/icon-gs.png"></image>
+                <text class="p2_text">{{company_name}}</text>
+            </view>
+            <view class="tel">
+                <image class="p2_img_tel" src="{{http_host}}uploads/web/img/card/icon-tel.png"></image>
+                <text class="p2_text">{{mobile}}</text>
+            </view>
+        </view>
+    </view>
+    <view class="foot" bindtap="getCode">
+        <image class="ewm" src="{{wxCode}}"></image>
+        <view class="f_text">
+            <text class="f_text1"><text class="green">{{name}}</text>小程序码</text>
+        </view>
+    </view>
+</view>
